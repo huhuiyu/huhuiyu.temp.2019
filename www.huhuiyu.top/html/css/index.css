@@ -1,0 +1,53 @@
+/* 
+  首页样式
+ */
+
+.title {
+  animation: title-color 5s infinite ease-in-out;
+}
+
+/* 头的动画效果 */
+@keyframes title-color {
+  0% {
+    text-shadow: 0px 0px 0rem #00ff00;
+  }
+  10% {
+    text-shadow: 0px 0px 2rem #00ff00;
+  }
+  20% {
+    text-shadow: 0px 0px 0rem #00ffff;
+  }
+  30% {
+    text-shadow: 0px 0px 2rem #00ffff;
+  }
+  40% {
+    text-shadow: 0px 0px 0rem #ff0000;
+  }
+  50% {
+    text-shadow: 0px 0px 2rem #ff0000;
+  }
+  60% {
+    text-shadow: 0px 0px 0rem #ff00ff;
+  }
+  70% {
+    text-shadow: 0px 0px 2rem #ff00ff;
+  }
+  80% {
+    text-shadow: 0px 0px 0rem #ffaa00;
+  }
+  90% {
+    text-shadow: 0px 0px 2rem #ffaa00;
+  }
+  100% {
+    text-shadow: 0px 0px 0rem #00ffff;
+  }
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5rem;
+}

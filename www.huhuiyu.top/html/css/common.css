@@ -1,0 +1,28 @@
+/* 公用样式common.css */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/* *号选择器表示全部的元素都受影响 */
+* {
+  /* 
+    word-break表示字符超过容器宽度是否要断行
+    break-all值表示强制断行
+   */
+  word-break: break-all;
+}
+
+.tc {
+  /* 文本居中 */
+  text-align: center;
+}
+
+.tr {
+  /* 文本靠右 */
+  text-align: right;
+}
+
+.tl{
+  /* 文本靠左 */
+  text-align: left;
+}
