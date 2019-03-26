@@ -49,5 +49,70 @@ footer {
   bottom: 0px;
   background-color: #000000;
   color: #ffffff;
-  padding: 5rem;
+  padding: 0.5rem;
+}
+
+.links {
+  display: flex;
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.links > div .iconfont {
+  font-size: 15rem;
+}
+
+.links > div > div {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.links > div {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.links > div:hover {
+  cursor: pointer;
+  animation: icon-color 0.5s infinite;
+}
+
+@keyframes icon-color {
+  0% {
+    transform: rotate(0deg);
+    text-shadow: 0px 0px 0rem #00f7ff;
+  }
+  10% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    text-shadow: 0px 0px 5rem #00f7ff;
+  }
 }
