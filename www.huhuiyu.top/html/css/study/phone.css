@@ -35,3 +35,42 @@
     display: block;
   }
 }
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images > div {
+  width: 25%;
+}
+
+.images img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1300px) {
+  .images > div {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1299px) {
+  .images > div {
+    width: 33.333333%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .images > div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .images > div {
+    width: 100%;
+  }
+}
+
+/* >1300 1000-1299 768-999 768< */
