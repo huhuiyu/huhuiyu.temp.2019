@@ -1,0 +1,29 @@
+/* icondemo.css */
+header {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  flex-grow: 1;
+}
+
+header div {
+  font-size: 2rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+#icons {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#icons i {
+  color: #ff0000;
+}
+
+#icons span {
+  color: #0000ff;
+  margin: 0px 0.5rem;
+}

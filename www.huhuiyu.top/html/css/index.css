@@ -68,6 +68,7 @@ footer {
 }
 
 .links > div {
+  margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.6);
@@ -115,4 +116,23 @@ footer {
     transform: rotate(0deg);
     text-shadow: 0px 0px 5rem #00f7ff;
   }
+}
+
+.imgs img {
+  width: 120px;
+  height: 100px;
+  border: 1px solid #acacac;
+  border-radius: 0.5rem;
+}
+
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+body {
+  /* css访问图片是以css文件自己为标准 */
+  background-image: url('../images/bg0004.png');
+  background-size: cover;
 }

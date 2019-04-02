@@ -1,0 +1,37 @@
+/* study/phone.css */
+.phone,
+.desktop {
+  display: none;
+}
+
+/* 媒体查询 screen是屏幕的意思 */
+/* 
+  格式：
+  @media screen and (媒体宽度查询表达式)
+  媒体宽度查询表达式：
+  max-width:表示不能超过宽度值
+  min-width:表示不能低于宽度值
+  例如：
+  @media screen and (max-width:1000px){
+    只有屏幕显示宽度小于1000px的时候才会生效的样式
+  }
+  @media screen and (min-width:777px){
+    屏幕显示宽度超过777px的时候才会生效的样式
+  }
+  @media screen and (min-width:768px)
+   and (max-width:1366px) {
+     屏幕宽度在768px到1366px直接才会生效的样式
+  }
+
+*/
+@media screen and (max-width: 768px) {
+  .phone {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .desktop {
+    display: block;
+  }
+}

@@ -8,7 +8,7 @@
   <title>iconfont</title>
   <link rel="stylesheet" href="css/iconfont.css">
   <link rel="stylesheet" href="css/common.css">
-
+  <link rel="stylesheet" href="css/icondemo.css">
 </head>
 
 <body>
@@ -17,10 +17,36 @@
     <h1 class="tc">
       iconfont演示
     </h1>
+    <div onclick="window.open('index.html','_self')">
+      <span>
+        <i class="iconfont">&#xe644;</i>
+        返回
+      </span>
+    </div>
   </header>
-  <section>
 
+  <section>
+    <div id="icons"></div>
   </section>
+
+  <script>
+    var fonts = [
+      '&#xe644;', '&#xe61e;', '&#xe760;',
+      '&#xe72a;', '&#xe608;', '&#xe60f;',
+      '&#xe767;', '&#xe63e;'
+    ];
+    var icons = document.getElementById('icons');
+
+    for (var i = 0; i < fonts.length; i++) {
+      var span = document.createElement('i');
+      span.innerHTML = fonts[i];
+      span.classList.add('iconfont');
+      icons.appendChild(span);
+      span = document.createElement('span');
+      span.innerText = fonts[i];
+      icons.appendChild(span);
+    }
+  </script>
 
 </body>
 
