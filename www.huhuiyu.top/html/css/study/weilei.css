@@ -1,0 +1,58 @@
+/* 
+伪类都是作用在选择器的后面，一般是一个或者两个:定义
+选择器:伪类
+选择器::伪类
+例如
+  div:hover表示div鼠标悬停
+  .div:hover表示class为div的元素鼠标悬停
+  #div:focus-within表示当id为div的元素中有元素获得焦点
+*/
+.wl01:hover {
+  /* hover:鼠标悬停（手机版会变成点击还没有松开时） */
+  cursor: pointer;
+  color: #0000ff;
+  border: 1px solid #000000;
+}
+
+.wl02 {
+  padding: 1rem;
+  border: 10px solid transparent;
+}
+
+.wl02 input {
+  /* outline: none; */
+  /* border-width: 0px; */
+}
+
+.wl02:focus-within {
+  /* focus-within，元素里面有焦点（一般只有输入元素） */
+  border: 10px solid #0000ff;
+  /* border-color: #ff0000; */
+  border-radius: 0.2rem;
+}
+.ahref a {
+  text-decoration: none;
+}
+.ahref a::after {
+  /* 
+    after表示在元素的后面
+    content表示内容
+   */
+  content: '|';
+}
+.div-before > div::before {
+  /* before表示在元素的前面 */
+  content: '·';
+}
+
+.div-ba span::before {
+  content: '-->';
+}
+
+.div-ba span::after {
+  content: '<--';
+}
+
+.div-ba span {
+  margin: 0px 0.2rem;
+}

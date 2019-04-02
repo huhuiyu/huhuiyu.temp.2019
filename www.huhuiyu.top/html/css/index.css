@@ -56,10 +56,12 @@ footer {
   display: flex;
   width: 1000px;
   margin: 0px auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .links > div .iconfont {
-  font-size: 15rem;
+  font-size: 5rem;
 }
 
 .links > div > div {
