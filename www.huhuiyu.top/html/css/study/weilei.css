@@ -56,3 +56,9 @@
 .div-ba span {
   margin: 0px 0.2rem;
 }
+
+.div-chi span:last-child {
+  /* last-child：子元素中的最后一个 */
+  border: 1px solid #ff0000;
+}
+
