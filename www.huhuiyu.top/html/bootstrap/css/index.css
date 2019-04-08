@@ -1,0 +1,11 @@
+/* index页面样式 */
+p a {
+  text-decoration: none;
+}
+p a:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+p a:not(:last-child)::after {
+  content: '|';
+}

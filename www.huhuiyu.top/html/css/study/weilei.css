@@ -62,3 +62,55 @@
   border: 1px solid #ff0000;
 }
 
+.div-chi span:first-child {
+  /* first-child：子元素中的第一个 */
+  border: 1px solid #0000ff;
+}
+
+.div-chi span:nth-child(3) {
+  /* nth-child(序号)：序号指定的子元素 */
+  color: #abcdef;
+  font-family: '隶书';
+}
+.div-chi span:nth-child(2) {
+  color: #123456;
+}
+
+.div-not span:not(:first-child) {
+  /* 
+    not()，将结果取反 
+    not(:first-child)表示不是第一个的
+  */
+  border: 1px solid #ff0000;
+}
+
+.div-show span:first-child {
+  /* 
+  top-left上左圆角
+  bottom-left下左圆角
+  top-right上右圆角
+  bottom-right下右圆角
+  */
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.div-show span:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.div-show span:not(:first-child) {
+  /* 除了第一个span，其它的都去掉左边框 */
+  border-left-width: 0px;
+}
+
+.div-show span {
+  border: 1px solid #ff0000;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.div-show {
+  margin: 1rem;
+}

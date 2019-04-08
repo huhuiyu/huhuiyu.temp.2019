@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文字特效</title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+</head>
+
+<body>
+  <header class="text-right">
+    <a href="index.html">返回首页</a>
+  </header>
+
+  <!-- 引用 -->
+  <blockquote>
+    <p>严豪杰</p>
+    <p>?-2017</p>
+  </blockquote>
+
+  <blockquote class="blockquote-reverse">
+    <p>靠右引用</p>
+  </blockquote>
+
+  <hr>
+
+  <section>
+    <ul>
+      <li>无序列表</li>
+      <li>
+        无序列表
+        <ul>
+          <li>嵌套1</li>
+          <li>嵌套2</li>
+        </ul>
+      </li>
+    </ul>
+    <!-- list-style-type：清单的显示风格 -->
+    <ol style="list-style-type:lower-alpha;">
+      <li>有序清单</li>
+      <li>
+        清单项
+        <ol>
+          <li>嵌套清单</li>
+        </ol>
+      </li>
+    </ol>
+
+  </section>
+
+  <hr>
+  <!-- 
+    table是表格的基本效果，
+    其它的表格样式都要先套用这个之后
+    table-bordered是带边框的表格效果
+    table-hover会加上鼠标悬停效果
+    table-striped是行交替配色效果
+    表格内容可以有多种配色，
+    active是鼠标悬停或者选中项的效果，一般不要使用
+    danger,info,success,warning,active
+   -->
+  <table class="table table-hover table-striped">
+    <tr class="warning">
+      <td>姓名</td>
+      <td>地址</td>
+      <td>性别</td>
+    </tr>
+    <tr>
+      <td>严豪杰</td>
+      <td>火星非主流</td>
+      <td>保密</td>
+    </tr>
+    <tr>
+      <td>严豪杰</td>
+      <td>火星非主流</td>
+      <td>保密</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
