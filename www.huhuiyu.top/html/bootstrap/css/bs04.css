@@ -1,0 +1,8 @@
+/* bs04的样式 */
+.form1 {
+  /* 
+  第一个表单的样式，固定在中间
+   */
+  width: 25rem;
+  margin: 0px auto;
+}

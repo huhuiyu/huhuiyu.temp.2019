@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单元素</title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/bs04.css">
+</head>
+
+<body>
+  <header class="text-right bg-primary pd5">
+    <a class="btn btn-danger" href="index.html">返回首页</a>
+  </header>
+  <section class="pd5 form1 form-group">
+    <div class="input-group">
+      <span class="input-group-addon">用户名</span>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="input-group">
+      <input type="password" class="form-control" placeholder="请输入密码">
+      <label class="input-group-addon">密码</label>
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-addon">校验码</span>
+      <input type="text" class="form-control">
+      <span class="input-group-addon">发送</span>
+    </div>
+
+  </section>
+
+  <section class="pd5 form-inline text-center">
+    <div class="form-group">
+
+      <div class="input-group">
+        <span class="input-group-addon">邮箱</span>
+        <input type="email" class="form-control">
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon">电话</span>
+        <input type="tel" class="form-control">
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon">学历</span>
+        <select class="form-control">
+          <option>中专</option>
+          <option>高中</option>
+          <option>大专</option>
+          <option>本科</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <section class="pd5 text-center">
+    <!-- 
+      按钮样式可以套用在非块级元素上
+      第一个必须是btn 第二个是按钮配色
+      btn-default，默认配色
+      btn-primary，主色调
+      按钮样式还有大小,btn-sm小，btn-lg大
+     -->
+    <a href="http://huhuiyu.top" class="btn btn-default">黑暗骑士</a>
+    <span class="btn btn-primary" onclick="window.open('http://pipilu8.top')">皮皮虾</span>
+    <span class="btn btn-danger btn-sm">按钮1</span>
+    <span class="btn btn-info btn-lg">按钮2</span>
+    <span class="btn btn-success">按钮3</span>
+    <span class="btn btn-warning">按钮4</span>
+  </section>
+
+  <section class="form-group">
+    <input type="checkbox" class="form-control" checked>
+    <input type="checkbox" class="form-control">
+    <input type="radio" class="form-control" name="sex" checked>
+    <input type="radio" class="form-control" name="sex">
+  </section>
+
+  <section class="form-group">
+    <span>爱好：</span>
+    <label class="checkbox-inline">
+      <input type="checkbox">游戏
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox">电影
+    </label>
+  </section>
+
+  <section>
+    <span>性别：</span>
+    <label class="radio-inline">
+      <input type="radio" name="sex">男
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="sex">女
+    </label>
+  </section>
+
+  <!-- 
+    radio,checkbox这两个元素不建议使用form-control样式
+    因为一般会出现多个并列的
+    一般是配合label标签使用，然后套用radio-inline
+    就可以显示在一行上
+   -->
+
+
+
+  <!-- 表单样式 -->
+  <!-- 容器套用form-group样式（一组表单只需要一个） -->
+  <!-- 
+    表单元素套用form-control样式美化
+    默认情况下，表单元素会填满一行(bootstrap是手机优先)
+   -->
+  <!-- 
+    如果需要给表单元素附加描述文本
+    要在外层div套用input-group样式
+    描述文本套用input-group-addon样式
+    描述文本可以同时出现在表单元素的前后
+   -->
+  <!-- 
+     如果需要将多个表单元素显示在一行上
+     需要在最外层添加form-inline样式
+     该样式是自适应，在屏幕小于768px时，会自动变成
+     一个表单控件占用一行的效果
+    -->
+
+</body>
+
+</html>
