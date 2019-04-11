@@ -1,0 +1,13 @@
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgs > div {
+  width: 25%;
+  padding: 1rem;
+}
+
+.mybotton {
+  width: 10rem;
+}

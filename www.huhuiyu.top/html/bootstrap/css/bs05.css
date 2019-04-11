@@ -1,18 +1,14 @@
 .main {
   /* 登录窗口,vh是视图的高度百分比*/
-  height: 80vh;
-  width: 25rem;
+  height: 60vh;
   margin: 0px auto;
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .main > div {
-  width: 100%;
-}
-
-.title {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  width: 30rem;
+  border: 1px solid #337ab7;
+  border-radius: 0.5rem;
 }

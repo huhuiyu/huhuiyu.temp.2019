@@ -17,9 +17,52 @@
   </header>
 
   <section class="main">
-    <div class="text-center bg-primary fs20 pd10 title">
-      用户注册
+
+    <div>
+      <div class="text-center bg-primary fs20 pd10">
+        用户注册
+      </div>
+      <div class="pd10">
+        <input type="text" class="form-control" placeholder="用户名">
+      </div>
+      <div class="pd10">
+        <input type="password" class="form-control" placeholder="密码">
+      </div>
+      <div class="pd10">
+        <select class="form-control">
+          <option selected>===请选择学历===</option>
+          <option>高中</option>
+          <option>大专</option>
+          <option>本科</option>
+        </select>
+      </div>
+
+      <div class="pd10">
+        <span>性别：</span>
+        <label class="radio-inline">
+          <input type="radio" name="sex">男
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="sex">女
+        </label>
+      </div>
+
+      <div class="pd10">
+        <span>爱好：</span>
+        <label class="checkbox-inline">
+          <input type="checkbox">游戏
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox">音乐
+        </label>
+      </div>
+
+      <div class="pd10 text-center">
+        <span class="btn btn-primary">注册</span>
+        <span class="btn btn-danger">重置</span>
+      </div>
     </div>
+
   </section>
 
 </body>
