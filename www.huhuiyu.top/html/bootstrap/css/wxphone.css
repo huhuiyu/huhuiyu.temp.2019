@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.tc {
+  text-align: center;
+}
+
+.footer {
+  background: #bcbcbc;
+  padding: 0.5rem 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer > div {
+  display: flex;
+}
+
+.footer > div > div {
+  text-align: center;
+  width: 25%;
+}
+
+.footer .iconfont {
+  font-size: 2rem;
+}
+
+

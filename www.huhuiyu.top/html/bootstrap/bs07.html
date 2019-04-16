@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+
+</head>
+
+<body>
+  <header class="bg-primary pd5 text-right">
+    <a href="index.html" class="btn btn-danger">返回首页</a>
+  </header>
+  <section>
+    <!-- 
+      下拉菜单
+      容器套用dropdown样式
+      第一个子组件是按钮，套用dropdown-toggle样式
+      并添加data-toggle="dropdown"属性
+      第二个子组件是ul-li，ul套用dropdown-menu样式
+      li是菜单项，里面需要a标签
+     -->
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" id="dropdown" data-toggle="dropdown">
+        下拉菜单
+      </button>
+      <ul class="dropdown-menu">
+        <!-- 不可以点击菜单描述 -->
+        <li class="dropdown-header">菜单标题项</li>
+        <li>
+          <a href="javascript:void(0);">打开文件</a>
+        </li>
+        <!-- divider是分隔线 -->
+        <li class="divider"></li>
+        <li class="disabled">
+          <!-- 禁用菜单项disabled -->
+          <a href="#">保存文件</a>
+        </li>
+        <li>
+          <a href="#">退出</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 
+      按钮组，将一组按钮放在容器中，容器套用
+      btn-group即可
+      btn-group-sm可以将按钮变小
+      btn-group-lg可以将按钮变大
+    -->
+    <div class="btn-group btn-group-sm">
+      <button class="btn btn-primary">按钮一</button>
+      <button class="btn btn-primary">按钮二</button>
+      <button class="btn btn-primary">按钮三</button>
+    </div>
+
+    <!-- 嵌套 -->
+    <div class="btn-group">
+      <button class="btn btn-primary">按钮一</button>
+      <button class="btn btn-primary">按钮二</button>
+      <button class="btn btn-primary">按钮三</button>
+      <div class="btn-group">
+        <button class="btn btn-primary dropdown-toggle" id="dropdown" data-toggle="dropdown">
+          下拉菜单
+        </button>
+        <ul class="dropdown-menu">
+          <!-- 不可以点击菜单描述 -->
+          <li class="dropdown-header">菜单标题项</li>
+          <li>
+            <a href="javascript:void(0);">打开文件</a>
+          </li>
+          <!-- divider是分隔线 -->
+          <li class="divider"></li>
+          <li class="disabled">
+            <!-- 禁用菜单项disabled -->
+            <a href="#">保存文件</a>
+          </li>
+          <li>
+            <a href="#">退出</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 垂直排列 -->
+    <div class="btn-group-vertical">
+      <span class="btn btn-danger">按钮一</span>
+      <span class="btn btn-danger">按钮二dfd</span>
+      <span class="btn btn-danger">按钮三</span>
+    </div>
+
+  </section>
+
+  <!-- js最好在最下面引用，区分大小写且有次序 -->
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+</body>
+
+</html>

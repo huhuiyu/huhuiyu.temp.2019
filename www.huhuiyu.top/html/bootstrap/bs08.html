@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <header class="bg-primary pd5 text-right">
+    <a href="index.html" class="btn btn-danger">返回首页</a>
+  </header>
+
+  <section>
+    <div>
+      <ul class="nav nav-tabs" id="menus">
+        <li class="active">
+          <a href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">用户管理</a>
+        </li>
+        <li>
+          <a href="#">部门管理</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="nav nav-pills">
+        <li>
+          <a href="#">胶囊导航一</a>
+        </li>
+        <li class="active">
+          <a href="#">胶囊导航二</a>
+        </li>
+        <li>
+          <a href="#">胶囊导航三</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 
+      导航面板 ul-li
+      ul套用nav nav-导航样式
+      li里面需要a标签
+      激活的li需要套用active样式
+     -->
+
+    <div>
+      <ul class="nav nav-stacked">
+        <li class="disabled">
+          <a href="#">胶囊导航一</a>
+        </li>
+        <li class="active">
+          <a href="#">胶囊导航二</a>
+        </li>
+        <li>
+          <a href="#">胶囊导航三</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="navbar-fixed-bottom text-center pd10">
+      <span class="btn btn-primary">首页</span>
+      <span class="btn btn-primary">课程</span>
+    </nav>
+
+  </section>
+
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script>
+    /*
+      $('#menus li')表示获取所有id为menus的元素里面
+      所有的li元素
+      .click表示附加点击事件
+      .removeClass表示去掉指定的样式
+      .addClass表示添加指定的样式
+      $(this)表示获取触发事件的元素
+    */
+
+    $('#menus li').click(function () {
+      console.log($(this));
+      $('#menus li').removeClass('active');
+      $(this).addClass('active');
+    });
+  </script>
+</body>
+
+</html>

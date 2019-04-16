@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+  <header class="bg-primary pd5 text-right">
+    <a href="index.html" class="btn btn-danger">返回首页</a>
+  </header>
+  <section>
+    <!-- 
+      分页一般是在管理较多页数据出现
+      容器为nav标签（没有实际作用，只是标识）
+      样式为ul标记套用pagination样式
+      li为分页项，里面为a标记
+     -->
+    <nav class="text-center">
+      <ul class="pagination">
+        <li><a href="#">回第一页</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">最后一页</a></li>
+      </ul>
+    </nav>
+
+    <!-- 适合手机版的分页(没有明细页码，占用空间更少) -->
+    <nav>
+      <ul class="pager">
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">下一页</a></li>
+      </ul>
+    </nav>
+
+    <!-- 标签 -->
+    <div>
+      <span class="label label-danger">情景模式标签一</span>
+      <span class="label label-default">标签二</span>
+      <span class="label label-info">标签三</span>
+      <span class="label label-primary">标签四</span>
+      <span class="label label-success">标签五</span>
+      <span class="label label-warning">标签六</span>
+    </div>
+
+
+  </section>
+
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+</body>
+
+</html>
