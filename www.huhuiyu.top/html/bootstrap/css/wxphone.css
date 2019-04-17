@@ -7,7 +7,7 @@ body {
 }
 
 .footer {
-  background: #bcbcbc;
+  background: #ececec;
   padding: 0.5rem 0px;
   position: fixed;
   bottom: 0px;
@@ -27,4 +27,81 @@ body {
   font-size: 2rem;
 }
 
+.footer > div > div.active {
+  color: #00aa00;
+}
 
+header > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ececec;
+  font-size: 1.2rem;
+}
+
+header .iconfont {
+  font-size: 1.5rem;
+}
+
+/* header中的第一个i元素 */
+header i:first-child {
+  margin-right: 2rem;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+/* 中间消息区域 */
+.container {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+/* 消息容器 */
+.messages {
+  display: flex;
+}
+/* 找到messages中的div的最后一个填满 */
+.messages > div:last-child {
+  flex-grow: 1;
+  border-bottom: 1px solid #ececec;
+  padding: 0.5rem;
+}
+
+.messages .icon {
+  padding: 0.5rem;
+}
+
+.messages .icon .iconfont {
+  font-size: 3rem;
+  color: #00aa00;
+}
+
+.message {
+  display: flex;
+}
+
+.message > div:first-child {
+  flex-grow: 1;
+}
+
+.message > div:last-child {
+  font-size: 0.8rem;
+}
+
+.message > div:last-child div {
+  text-align: right;
+  padding: 0.2rem;
+}
+
+.message > div:first-child div {
+  padding: 0.2rem;
+}
+
+.message .pre {
+  font-size: 0.5rem;
+  color: #999999;
+}

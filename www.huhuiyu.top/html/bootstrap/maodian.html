@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>maodian-锚点</title>
+  <style>
+    section {
+      height: 50vh;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 
+    锚点是页面内跳转
+    通过<a name="锚点名称"></a>定义锚点位置
+    通过<a href="#锚点名称">描述信息</a>
+    跳转到锚点对应位置
+   -->
+  <header>
+    <a name="menu"></a>
+    <a href="#p1">第一节</a>
+    <a href="#p2">第二节</a>
+    <a href="#p3">第三节</a>
+    <a href="#p4">第四节</a>
+  </header>
+  <section>
+    <a name="p1"></a><a href="#menu">返回</a>
+    第一节内容
+  </section>
+  <section><a name="p2"></a><a href="#menu">返回</a>第二节内容</section>
+  <section><a name="p3"></a><a href="#menu">返回</a>第三节内容</section>
+  <section><a name="p4"></a><a href="#menu">返回</a>第四节内容</section>
+
+</body>
+
+</html>
