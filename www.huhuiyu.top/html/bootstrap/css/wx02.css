@@ -1,0 +1,130 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #ececec;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ececec;
+  font-size: 1.2rem;
+}
+
+header .iconfont {
+  font-size: 1.5rem;
+}
+
+/* header中的第一个i元素 */
+header i:first-child {
+  margin-right: 2rem;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.tc {
+  text-align: center;
+}
+
+.footer {
+  background: #ececec;
+  padding: 0.5rem 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+.footer > div {
+  display: flex;
+}
+
+.footer > div > div {
+  text-align: center;
+  width: 25%;
+}
+
+.footer .iconfont {
+  font-size: 2rem;
+}
+
+.footer > div > div.active {
+  color: #00aa00;
+}
+
+/* 中间消息区域 */
+.container {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+.xdpy {
+  display: flex;
+  background-color: #ffffff;
+}
+.xdpy > div:first-child {
+  margin: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #ee9746;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+.xdpy .iconfont {
+  font-size: 1.5rem;
+}
+
+.xdpy > div:last-child {
+  flex-grow: 1;
+  border-bottom: 1px solid #ececec;
+  line-height: 4;
+}
+
+.ql {
+  display: flex;
+  background-color: #ffffff;
+}
+.ql > div:first-child {
+  margin: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #00aa00;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+.ql .iconfont {
+  font-size: 1.5rem;
+}
+
+.ql > div:last-child {
+  flex-grow: 1;
+  border-bottom: 1px solid #ececec;
+  line-height: 4;
+}
+
+.gzh {
+  display: flex;
+  background-color: #ffffff;
+}
+.gzh > div:first-child {
+  margin: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #0000ff;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+.gzh .iconfont {
+  font-size: 1.5rem;
+}
+
+.gzh > div:last-child {
+  flex-grow: 1;
+  border-bottom: 1px solid #ececec;
+  line-height: 4;
+}
+
+.zmb {
+  padding: 0.5rem 1rem;
+}
