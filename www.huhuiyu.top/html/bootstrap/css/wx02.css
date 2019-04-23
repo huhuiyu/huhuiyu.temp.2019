@@ -128,3 +128,21 @@ header {
 .zmb {
   padding: 0.5rem 1rem;
 }
+
+.az {
+  background-color: transparent;
+  color: #000000;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  right: 5px;
+  width: 1rem;
+  text-align: center;
+  margin-top: 4.5rem;
+}
+
+.az a {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: #000000;
+}

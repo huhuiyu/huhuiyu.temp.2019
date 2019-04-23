@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.tc {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #ececec;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #dcdcdc;
+  text-align: center;
+  padding: 0.5rem 0px;
+}
+
+footer .iconfont {
+  font-size: 1.8rem;
+}
+
+footer div.active {
+  color: #36baee;
+}
+
+header {
+  background-color: #2577f1;
+  color: #ffffff;
+}
+
+header > div:first-child {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.header-seach {
+  /* 搜索框的布局 */
+  flex-grow: 1;
+  background-color: #ffffff;
+  color: #aaaaaa;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-items: center;
+}
+
+.header-seach input {
+  border-color: transparent;
+  outline: none;
+}
+
+.header-seach > div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.font-bg {
+  font-size: 1.5rem;
+}
