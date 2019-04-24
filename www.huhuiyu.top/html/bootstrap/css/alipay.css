@@ -46,6 +46,7 @@ header > div:first-child {
   border-radius: 0.2rem;
   display: flex;
   justify-items: center;
+  margin-right: 1rem;
 }
 
 .header-seach input {
@@ -59,4 +60,137 @@ header > div:first-child {
 
 .font-bg {
   font-size: 1.5rem;
+}
+
+.menus {
+  /* 菜单容器 */
+  display: flex;
+  padding: 0.5rem 0px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.menus .iconfont {
+  font-size: 1.8rem;
+}
+
+.tools {
+  /* 功能菜单单行 */
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1rem 0px;
+}
+
+.tools .iconfont {
+  font-size: 1.6rem;
+}
+
+.messages {
+  /* 消息容器 */
+  border-top: 0.5rem solid #ececec;
+  border-bottom: 0.5rem solid #ececec;
+  display: flex;
+  align-items: center;
+}
+
+.messages > div {
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+
+.messages .iconfont {
+  font-size: 2rem;
+}
+
+.messages > div span {
+  color: #ababab;
+}
+
+.messages > div:nth-child(2) {
+  flex-grow: 1;
+}
+
+.messages .to {
+  color: #ababab;
+  font-size: 1.5rem;
+}
+
+/* 广告区域 */
+.banner {
+  display: flex;
+  border-bottom: 0.5rem solid #ececec;
+  align-items: center;
+}
+
+.banner > div:first-child {
+  flex-grow: 1;
+}
+
+.banner > div {
+  padding: 1rem;
+}
+
+.banner .iconfont {
+  font-size: 3rem;
+}
+
+.banner .sp1 {
+  /* 第一行字 */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.banner .sp1 span {
+  color: #0000ff;
+}
+
+.banner .sp2 {
+  color: #ababab;
+}
+
+.banner .sp2 span {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+main {
+  margin-bottom: 5rem;
+}
+
+.huizhifu {
+  /* 惠支付 */
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.huizhifu .main {
+  border: 1px solid #ececec;
+  padding: 1rem 0.5rem;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.huizhifu .main .iconfont {
+  font-size: 3rem;
+}
+
+.huizhifu .sp1 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.huizhifu .sp2 {
+  font-size: 0.7rem;
+  color: #aaaaaa;
+}
+
+.huizhifu .sp1,
+.huizhifu .sp2 {
+  line-height: 1.5;
 }
