@@ -1,0 +1,21 @@
+/* 首页样式 */
+main {
+  /* 宽度 */
+  width: 50rem;
+  /* 元素在容器中居中 */
+  margin: 0px auto;
+}
+
+main a:hover {
+  /* 动画,1s,无限循环 */
+  animation: a-hover 1s infinite;
+}
+
+@keyframes a-hover {
+  0% {
+    text-shadow: 0px 0px 0px #00ff00;
+  }
+  100% {
+    text-shadow: 0px 0px 1rem #00ff00;
+  }
+}
