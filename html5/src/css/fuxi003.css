@@ -1,0 +1,73 @@
+.flex-cdiv {
+  /* 
+    压力布局(默认里面的一级元素会被压到内容的宽度
+    ,高度是容器高度) 
+  */
+  display: flex;
+  border: 1px solid #ff0000;
+  height: 5rem;
+  /* 压力盒子的子元素对齐方式 */
+  /* 水平轴 */
+  justify-content: center;
+  /* 交叉轴 */
+  align-items: center;
+}
+
+.flex-cdiv > div {
+  border: 1px solid #0000ff;
+  width: 10rem;
+}
+
+.flex-fensan {
+  display: flex;
+  /* 分散对齐 */
+  justify-content: space-between;
+}
+
+.flex-fensan > div {
+  border: 1px solid #ff0000;
+}
+
+.flex-huanhang {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-huanhang > div {
+  border: 1px solid #ff0000;
+  width: 33%;
+}
+
+.flex-zzy {
+  display: flex;
+}
+
+.flex-zzy > div:nth-child(2) {
+  /* 中间元素填满剩余空间(
+    只有设置了flex-grow会填满剩余空间) */
+  flex-grow: 1;
+  background-color: #00ff00;
+}
+
+.flex-zy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-zy > div {
+  border: 1px solid #ff0000;
+}
+
+.flex-zh {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-zh > div {
+  width: 800px;
+  background-color: #00ff00;
+}
+
+.bg-div {
+  background-color: #ff0000;
+}

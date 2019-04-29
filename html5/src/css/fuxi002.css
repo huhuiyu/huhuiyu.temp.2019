@@ -1,0 +1,57 @@
+/* 相对定位中的绝对定位 */
+.rdiv {
+  /* 
+    定位为relative表示里面的元素定位被
+    约束在自己里面
+   */
+  position: relative;
+}
+
+.rdiv .r1 {
+  position: absolute;
+  /* 绝对定位需要坐标 */
+  top: 1rem;
+  left: 5rem;
+  border: 1px solid #ff0000;
+  width: 25rem;
+  height: 25rem;
+  background-color: #00ff00;
+  z-index: 2;
+}
+
+.rdiv .r2 {
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+  border: 1px solid #00ff00;
+  width: 25rem;
+  height: 25rem;
+  background-color: #00ffff;
+  /* 
+  如果元素重叠，可以通过z-index控制谁在前面
+  越大越不容易被遮挡,z-index默认值是0
+  如果是-1，会被常规元素遮挡
+   */
+  z-index: 1;
+}
+
+.r3 {
+  /* 不在相对定位中的绝对定位(坐标是参考body) */
+  position: absolute;
+  z-index: 3;
+  width: 25rem;
+  height: 25rem;
+  background-color: #ff00ff;
+  top: 10rem;
+  left: 15rem;
+}
+
+.r4 {
+  /* 固定位置 */
+  position: fixed;
+  right: 0px;
+  top: 5rem;
+  width: 1.01rem;
+  border: 1px solid #ff0000;
+  z-index: 10;
+}
