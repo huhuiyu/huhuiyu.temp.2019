@@ -1,0 +1,88 @@
+/* 盒模型包括margin，padding，border */
+.box {
+  margin: 10px;
+  border: 1px dotted #ff0000;
+  padding: 5px;
+}
+
+.box > div {
+  border: 1px solid #0000ff;
+  padding: 1rem;
+}
+
+.box > div > div {
+  background-color: #00ff00;
+  color: #ff0000;
+  font-size: 2em;
+}
+
+.wl span {
+  border: 0.5rem solid transparent;
+}
+
+.wl span:hover {
+  /* 鼠标悬停 */
+  border-color: #0000ff;
+  cursor: pointer;
+}
+
+.wl li {
+  /* 
+    display:
+      inline是非块级元素显示效果（一行紧贴）
+      block是块级元素显示效果（占满一行）
+      inline-block是两者中和
+        （一行紧贴但是可以设置高宽和盒模型）
+   */
+  display: inline;
+}
+
+.wl li::before {
+  /* li元素的前面添加内容 */
+  content: '·';
+}
+
+.wl li::after {
+  /* li元素的后面添加内容 */
+  content: '-->';
+}
+
+.wl > div > div {
+  border: 1px solid #ff0000;
+  width: 10rem;
+}
+
+.wl > div > div:not(:last-child) {
+  /* :not取反，:last-child最后一个元素 */
+  border-bottom-width: 0px;
+}
+
+.wl > div > div:first-child {
+  /* :first-child是第一个元素  */
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+}
+
+.wl > div > div:nth-child(3) {
+  /* :nth-child(n)是第n个元素 */
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.wl-focus input {
+  /* 拿掉input元素的边框 */
+  outline: none;
+  border-width: 0px;
+}
+
+.wl-focus {
+  padding: 0.5rem;
+  border: 2px solid #acacac;
+  width: 25rem;
+  border-radius: 0.5rem;
+}
+
+.wl-focus:focus-within {
+  /* :focus-within表示元素里面有获取到焦点时 */
+  border-color: #0000ff;
+}

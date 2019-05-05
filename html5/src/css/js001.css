@@ -1,0 +1,17 @@
+/* 
+  #是id选择器，切记！！！id属性整个页面只能有一个
+  否则样式会出错，而js会严重错误
+ */
+#spInfo {
+  display: inline-block;
+  border: 2px solid #ff0000;
+  border-radius: 10rem;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#spInfo:hover {
+  background-color: #dcdddc;
+  color: #0000ff;
+}
