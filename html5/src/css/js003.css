@@ -1,0 +1,10 @@
+.container {
+  /* 容器布局 */
+  width: 800px;
+  margin: 0px auto;
+}
+
+.yx {
+  display: flex;
+  justify-content: space-between;
+}
