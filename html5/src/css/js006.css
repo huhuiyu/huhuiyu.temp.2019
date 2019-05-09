@@ -1,0 +1,20 @@
+body {
+  background-image: url('../images/bg0003.png');
+  background-size: cover;
+}
+main {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main > div {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 0.3rem #0000aa;
+}
+
+
