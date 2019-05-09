@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>作业</title>
+</head>
+
+<body>
+  最小值：<input type="text" id="txtMin">
+  最大值：<input type="text" id="txtMax">
+  <button id="btnRand">生成随机数</button>
+  <span id="spRand"></span>
+
+  <script>
+    let txtMin = document.getElementById('txtMin');
+    let txtMax = document.getElementById('txtMax');
+    txtMin.value = 1;
+    txtMax.value = 6;
+    let btnRand = document.getElementById('btnRand');
+    let spRand = document.getElementById('spRand');
+
+    btnRand.addEventListener('click', function () {
+      spRand.textContent = parseInt(
+        Math.random() * (txtMax.value - txtMin.value + 1) + txtMin.value);
+    });
+  </script>
+</body>
+
+</html>

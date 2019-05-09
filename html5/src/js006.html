@@ -18,10 +18,30 @@
   <main>
     <div>
       <h2 class="tc">用户注册</h2>
-      <div>
-        <input type="text" id="txtName"
-           placeholder="请输入用户名">
+
+      <div class="form-group">
+        <input type="text" id="txtName" placeholder="请输入用户名">
       </div>
+
+      <div class="form-group">
+        <input type="password" id="txtPwd" placeholder="请输入密码">
+      </div>
+
+      <div class="form-group">
+        <select id="selXueli">
+          <option value="-1">==请选择学历==</option>
+          <option value="1">高中</option>
+          <option value="2">大专</option>
+          <option value="3">本科</option>
+        </select>
+      </div>
+
+      <div class="tc pd10">
+        <span class="mybtn" id="btnReg">注册</span>
+        <span class="mybtn" id="btnReset">重置</span>
+      </div>
+      
+      <div id="divInfo" class="tc"></div>
     </div>
   </main>
 
