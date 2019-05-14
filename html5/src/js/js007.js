@@ -50,4 +50,16 @@ js可以控制style的值
 同理 元素.style.backgroundImage是设置background-image
 样式名称的减号要去掉，然后将减号后的字母转大写
 反过来就是将大写字母转小写前面补减号
- */
+*/
+
+let divTimer = document.getElementById('divTimer');
+
+//setInterval函数是定时任务
+//第一个参数是定时执行的代码块(function)
+//第二个参数是定时的间隔毫秒数
+//简单的说就是每隔第二参数毫秒值就会执行
+//第一个参数里面的代码
+setInterval(function() {
+  divTimer.innerHTML = divTimer.innerHTML 
+  + '计时器添加信息<br>';
+}, 1000);

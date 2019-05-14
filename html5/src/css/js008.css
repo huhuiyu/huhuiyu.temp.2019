@@ -1,0 +1,5 @@
+body {
+  background-image: url('../images/bg0.png');
+  transition: all 1s;
+  color: #ffff00;
+}
