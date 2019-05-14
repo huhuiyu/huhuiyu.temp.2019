@@ -23,8 +23,10 @@
     let spRand = document.getElementById('spRand');
 
     btnRand.addEventListener('click', function () {
+      var max = parseInt(txtMax.value);
+      var min = parseInt(txtMin.value);
       spRand.textContent = parseInt(
-        Math.random() * (txtMax.value - txtMin.value + 1) + txtMin.value);
+        Math.random() * (max - min + 1) + min);
     });
   </script>
 </body>
