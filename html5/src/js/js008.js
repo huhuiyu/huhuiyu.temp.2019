@@ -36,6 +36,5 @@ setInterval(function() {
   //也就是余商，比如8%3 2 9%3 0
   index = index % 4;
   console.log(index);
-  document.body.style.backgroundImage
-   = 'url("images/bg' + index + '.png")';
+  document.body.style.backgroundImage = 'url("images/bg' + index + '.png")';
 }, 1000);
