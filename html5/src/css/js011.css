@@ -1,0 +1,33 @@
+#err01 {
+  color: #ff0000;
+}
+
+#input01 input {
+  outline: none;
+  border-color: transparent;
+}
+
+#input01 {
+  border: 1px solid #acacac;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 15rem;
+  margin: 0px auto;
+}
+
+#input01:focus-within {
+  border-color: #0000ff;
+}
+
+/* 密码相关样式 */
+#reqPwd,
+#err02,
+#err03,
+#err04 {
+  color: #ff0000;
+}
+#err02,
+#err03,
+#err04 {
+  display: none;
+}
