@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js-流程判断4</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/js013.css">
+</head>
+
+<body>
+  <header class="tr">
+    <a href="index.html">返回首页</a>
+  </header>
+  <hr>
+  <main class="tc">
+    <h1>闰年判断</h1>
+    <section>
+      <!-- 
+        txt是输入框,btn是按钮，div是div
+        sp是span，一般不要超过三个字符
+       -->
+      <div>
+        请输入年份：
+        <input type="text" id="txtYear">
+        <button id="btnYear">确定</button>
+      </div>
+      <div id="divYear"></div>
+    </section>
+
+    <h1>模拟登陆</h1>
+    <section>
+      <div>
+        <label>
+          用户名：<input type="text" id="txtName">
+        </label>
+      </div>
+      <div>
+        <label>
+          密码：<input type="password" id="txtPwd">
+        </label>
+      </div>
+      <div>
+        <button id="btnLogin">登陆</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/js013.js"></script>
+  <!-- 
+    作业1：模拟登陆的功能升级版本
+    如果用户名没有输入提示错误:请输入用户名
+    如果用户名不是admin提示错误：用户名不正确
+    如果密码没有输入提示错误：请输入密码
+    如果密码不是admin-pwd提示错误：密码不正确
+    否则显示欢迎管理员登陆
+    作业1级别2：
+      用户名错误的时候，焦点要回到用户名输入框
+      且用户名输入框带有红色边框
+      密码错误的时候，焦点要回到密码输入框
+      且密码输入框带有红色边框
+    作业2：画出登陆的流程图
+   -->
+</body>
+
+</html>
