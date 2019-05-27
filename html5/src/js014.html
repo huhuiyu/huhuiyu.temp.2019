@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js-本地储存</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/js014.css">
+</head>
+
+<body>
+  <header class="tr">
+    <a href="index.html">返回首页</a>
+  </header>
+  <hr>
+  <main class="tc">
+    <h1>
+      本地储存-html5标准新增功能
+    </h1>
+    <section>
+      <input type="text" id="txtLocal" placeholder="请输入要保存在本地的数据">
+      <button id="btnSaveLocal">保存</button>
+      <button id="btnLoadLocal">读取</button>
+      <button id="btnDelLocal">删除</button>
+    </section>
+
+    <h1>本地session存储(关闭浏览器就会丢失)</h1>
+    <section>
+      <input type="text" id="txtSession">
+      <button id="saveSession">保存session</button>
+      <button id="loadSession">读取session</button>
+      <button id="delSession">删除session</button>
+    </section>
+
+    <div id="divInfo"></div>
+  </main>
+
+  <script src="js/js014.js"></script>
+</body>
+
+</html>
