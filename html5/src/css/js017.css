@@ -1,0 +1,18 @@
+.info {
+  width: 800px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.info img {
+  width: 5rem;
+  border-radius: 50%;
+  border: 1px solid #ff0000;
+}
+
+.info > div {
+  display: flex;
+  align-items: center;
+}
