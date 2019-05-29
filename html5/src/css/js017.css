@@ -16,3 +16,13 @@
   display: flex;
   align-items: center;
 }
+
+#divInfo {
+  height: 30rem;
+  /* 
+    overflow是控制滚动条是否显示
+    auto表示自动（内容没有超出就不出现，否则出现）
+    hidden表示不要出现 
+   */
+  overflow: auto;
+}
