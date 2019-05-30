@@ -15,15 +15,24 @@ let divJoker = document.getElementById('divJoker');
 let divInfo = document.getElementById('divInfo');
 let btnStart = document.getElementById('btnStart');
 //初始化信息
-divBatman.innerHTML = batman01 + '<br>';
-divBatman.innerHTML += '生命' + batman02 + '<br>';
-divBatman.innerHTML += '最大攻击' + batman03 + '<br>';
-divBatman.innerHTML += '最小攻击' + batman04 + '<br>';
+function batmaninfo() {
+  //蝙蝠侠信息更新
+  divBatman.innerHTML = batman01 + '<br>';
+  divBatman.innerHTML += '生命' + batman02 + '<br>';
+  divBatman.innerHTML += '最大攻击' + batman03 + '<br>';
+  divBatman.innerHTML += '最小攻击' + batman04 + '<br>';
+}
 
-divJoker.innerHTML = joker01 + '<br>';
-divJoker.innerHTML += '生命' + joker02 + '<br>';
-divJoker.innerHTML += '最大攻击' + joker03 + '<br>';
-divJoker.innerHTML += '最小攻击' + joker04 + '<br>';
+function jokerinfo() {
+  //小丑信息更新
+  divJoker.innerHTML = joker01 + '<br>';
+  divJoker.innerHTML += '生命' + joker02 + '<br>';
+  divJoker.innerHTML += '最大攻击' + joker03 + '<br>';
+  divJoker.innerHTML += '最小攻击' + joker04 + '<br>';
+}
+
+batmaninfo();
+jokerinfo();
 
 //回合数
 let count = 0;
@@ -31,7 +40,6 @@ let count = 0;
 let sh = 0;
 //是否结束(只有真假两种结果)
 let finish = false;
-
 btnStart.addEventListener('click', function() {
   //判断是否已经结束
   if (finish) {
@@ -43,23 +51,39 @@ btnStart.addEventListener('click', function() {
   divInfo.innerHTML += '第' + count + '轮攻击<br>';
   //蝙蝠侠攻击
   sh = parseInt(Math.random() * (batman03 - batman04 + 1) + batman04);
+  let bj = parseInt(Math.random() * 5 + 1);
+  //只有随机数是5才会暴击
+  if (bj == 5) {
+    //暴击就是伤害加倍
+    sh = sh * 2;
+  }
   //小丑受到伤害
   joker02 -= sh;
-  divInfo.innerHTML += batman01 + '对' + joker01 + '造成了' + sh + '点伤害<br>';
+  if (bj == 5) {
+    //暴击的样式不一样
+    divInfo.innerHTML += '<span class="bj-color">' + batman01 + '对' + joker01 + '造成了' + sh + '点伤害</span><br>';
+  } else {
+    divInfo.innerHTML += batman01 + '对' + joker01 + '造成了' + sh + '点伤害<br>';
+  }
   //小丑信息面板变化
-  divJoker.innerHTML = joker01 + '<br>';
-  divJoker.innerHTML += '生命' + joker02 + '<br>';
-  divJoker.innerHTML += '最大攻击' + joker03 + '<br>';
-  divJoker.innerHTML += '最小攻击' + joker04 + '<br>';
+  jokerinfo();
   //小丑攻击
   sh = parseInt(Math.random() * (joker03 - joker04 + 1) + joker04);
+  //暴击效果
+  bj = parseInt(Math.random() * 5 + 1);
+  if (bj == 5) {
+    sh = sh * 2;
+  }
   batman02 -= sh;
-  divInfo.innerHTML += joker01 + '对' + batman01 + '造成了' + sh + '点伤害<br>';
+  if (bj == 5) {
+    divInfo.innerHTML += '<span class="bj-color">'
+     + joker01 + '对' + batman01 + '造成了' 
+     + sh + '点伤害</span><br>';
+  } else {
+    divInfo.innerHTML += joker01 + '对' + batman01 + '造成了' + sh + '点伤害<br>';
+  }
   //蝙蝠侠信息面板更新
-  divBatman.innerHTML = batman01 + '<br>';
-  divBatman.innerHTML += '生命' + batman02 + '<br>';
-  divBatman.innerHTML += '最大攻击' + batman03 + '<br>';
-  divBatman.innerHTML += '最小攻击' + batman04 + '<br>';
+  batmaninfo();
   //判断结果
   if (batman02 <= 0 && joker02 <= 0) {
     //同归于尽的结果
@@ -83,13 +107,6 @@ btnReset.addEventListener('click', function() {
   joker02 = 500;
   divInfo.innerHTML = '';
 
-  divBatman.innerHTML = batman01 + '<br>';
-  divBatman.innerHTML += '生命' + batman02 + '<br>';
-  divBatman.innerHTML += '最大攻击' + batman03 + '<br>';
-  divBatman.innerHTML += '最小攻击' + batman04 + '<br>';
-
-  divJoker.innerHTML = joker01 + '<br>';
-  divJoker.innerHTML += '生命' + joker02 + '<br>';
-  divJoker.innerHTML += '最大攻击' + joker03 + '<br>';
-  divJoker.innerHTML += '最小攻击' + joker04 + '<br>';
+  batmaninfo();
+  jokerinfo();
 });

@@ -16,7 +16,32 @@ function showTime() {
   let hour = now.getHours(); //时
   let minute = now.getMinutes(); //分
   let second = now.getSeconds(); //秒
-  divTime.innerHTML = year + '年' + month + '月' + day + '日 ' + hour + ':' + minute + ':' + second;
+  //上下午判断
+  let ampm = '上午';
+  if (hour >= 12) {
+    ampm = '下午';
+  }
+  if (hour > 12) {
+    hour = hour - 12;
+  }
+  //前导补零
+  if (month < 10) {
+    month = '0' + month;
+  }
+  if (day < 10) {
+    day = '0' + day;
+  }
+  if (hour < 10) {
+    hour = '0' + hour;
+  }
+  if (minute < 10) {
+    minute = '0' + minute;
+  }
+  if (second < 10) {
+    second = '0' + second;
+  }
+
+  divTime.innerHTML = year + '年' + month + '月' + day + '日 ' + ampm + ' ' + hour + ':' + minute + ':' + second;
 }
 
 //更新时间
