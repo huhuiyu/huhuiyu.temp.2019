@@ -5,11 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>拿火柴游戏</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/js019.css">
 </head>
 
 <body>
+  <!-- 
+    规则，火柴总数21根，每次只能拿1-4根
+    人先拿，电脑后拿，谁拿到最后一根输
+    程序要求：电脑必然赢掉游戏
+  -->
+  <header class="tr">
+    <a href="index.html">返回首页</a>
+  </header>
+  <hr>
+  <main class="tc">
+    <div>
+      <h1>
+        规则，火柴总数21根，每次只能拿1-4根
+        人先拿，电脑后拿，谁拿到最后一根输
+        程序要求：电脑必然赢掉游戏
+      </h1>
 
+      <div>
+        <button id="btnStart">开始游戏</button>
+        <input type="text" id="txtNum">
+        <button id="btnTake">拿火柴</button>
+      </div>
+
+      <div id="divInfo"></div>
+      
+    </div>
+  </main>
+
+  <script src="js/js019.js"></script>
 </body>
 
 </html>
