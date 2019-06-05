@@ -49,3 +49,83 @@ btnChange.addEventListener('click', function() {
   batman.hp = batman.hp - parseInt(Math.random() * 101 - 50);
   showBatMan();
 });
+
+//使用json保存用户注册信息==============
+//本地储存不能保存复杂数据类型
+//所以需要json和字符串相互转换
+let txtName = document.getElementById('txtName');
+let txtPwd = document.getElementById('txtPwd');
+let txtNickname = document.getElementById('txtNickname');
+let btnReg = document.getElementById('btnReg');
+let btnReset = document.getElementById('btnReset');
+let divReg = document.getElementById('divReg');
+//json格式用户信息
+let userinfo = {};
+btnReset.addEventListener('click', function() {
+  //直接重置json为空值
+  userinfo = {};
+  txtName.value = '';
+  txtPwd.value = '';
+  txtNickname.value = '';
+  txtName.focus();
+  divReg.innerHTML = '';
+});
+
+btnReg.addEventListener('click', function() {
+  if (txtName.value == '') {
+    divReg.innerHTML = '用户名必须填写';
+    return;
+  }
+  if (txtPwd.value == '') {
+    divReg.innerHTML = '密码必须填写';
+    return;
+  }
+  if (txtNickname.value == '') {
+    divReg.innerHTML = '昵称必须填写';
+    return;
+  }
+  //校验完成，保存数据到本地
+  //json的属性可以临时增加，不一定要定义后才能使用
+  //给userinfo添加name属性，值为txtName的输入值
+  userinfo.name = txtName.value;
+  userinfo.password = txtPwd.value;
+  userinfo.nickname = txtNickname.value;
+  console.log(userinfo);
+  //本地储存不能直接保存json，需要转换成字符串
+  //javascript内置了JSON对象来处理转换
+  //JSON.stringify方法可以将json对象转为标准格式字符串
+  let strUser = JSON.stringify(userinfo);
+  console.log(strUser);
+  //保存信息（json格式字符串）
+  localStorage.setItem('userinfo', strUser);
+  divReg.innerHTML = '用户注册成功!';
+});
+
+//用户登陆======================
+let loginName = document.getElementById('loginName');
+let loginPwd = document.getElementById('loginPwd');
+let btnLogin = document.getElementById('btnLogin');
+
+btnLogin.addEventListener('click', function() {
+  //读取本地储存中的用户信息
+  let saveuser = localStorage.getItem('userinfo');
+  if (!saveuser) {
+    divReg.innerHTML = '请先注册';
+    return;
+  }
+  //转换本地储存的字符串为json格式
+  //JSON.parse方法可以将json格式字符串还原为json对象
+  let user = JSON.parse(saveuser);
+  console.log('本地数据:', user);
+  if (user.name == loginName.value && user.password == loginPwd.value) {
+    alert(user.nickname + '登陆成功！');
+  } else {
+    alert('用户名或者密码错误，登陆失败');
+  }
+});
+
+document.getElementById('btnClear')
+.addEventListener('click', function() {
+  localStorage.removeItem('userinfo');
+  alert('注销成功');
+});
