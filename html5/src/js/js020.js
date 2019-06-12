@@ -124,8 +124,31 @@ btnLogin.addEventListener('click', function() {
   }
 });
 
-document.getElementById('btnClear')
-.addEventListener('click', function() {
+document.getElementById('btnClear').addEventListener('click', function() {
   localStorage.removeItem('userinfo');
   alert('注销成功');
 });
+
+//复合的json对象=====================
+//描述一个学生对象
+let student = {
+  //学号
+  sid: 1,
+  //姓名
+  name: '孙青峰',
+  //性别
+  sex: '男',
+  //电话
+  phone: '15888888888',
+  //所在班级信息，也是一个json
+  classInfo: {
+    //班级名称
+    name: '计算机1801',
+    //班级创建日期
+    created: '2018-08-24'
+  }
+};
+//复合对象调用，可以通过多级名称调用
+//简单的说就是，属性值也可以是json无限嵌套
+console.log(student.classInfo.name,
+  student.name);
