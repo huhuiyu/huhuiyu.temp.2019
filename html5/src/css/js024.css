@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* 
+  不显示滚动条!!内容超出页面高宽就看不到了
+  但是手机可以通过拖动看到
+  还有  overflow-x,和  overflow-y的版本
+  分别表示横向滚动条和纵向滚动条
+   */
+  overflow: hidden;
+}
+#divButtons span {
+  display: inline-block;
+  border: 1px solid #c2185b;
+  background-color: #e91e63;
+  color: #ffffff;
+  margin: 0.2rem;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0px 0.2rem #c2185b;
+}
+
+#divButtons span:hover {
+  cursor: pointer;
+  background-color: #c2185b;
+}
