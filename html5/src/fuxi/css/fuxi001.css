@@ -1,0 +1,28 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+* {
+  /* 
+    当单词超过容器宽度时，强制折断单词到下一行
+    对中文无效
+   */
+  word-break: break-all;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .input-group {
+  margin-top: 1rem;
+}
+
+main > div {
+  width: 25rem;
+}
