@@ -2,6 +2,8 @@ body {
   padding: 0px;
   margin: 0px;
   overflow: hidden;
+  background-image: url('../images/darkknight.png');
+  background-size: cover;
 }
 
 * {
@@ -17,6 +19,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 main .input-group {
@@ -24,5 +27,6 @@ main .input-group {
 }
 
 main > div {
-  width: 25rem;
+  width: 30rem;
+  box-shadow: 0px 0px 1rem #ffffff !important;
 }
